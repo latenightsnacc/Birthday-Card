@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Birthday Card</title>
+</head>
+<body>
+    <!--Header-->
+    <div class="container-fluid" id="header">
+        <h1 class="text-center pt-3" id="title">Birthday Wish</h1>
+        <h5 class="text-center py-2" id="sub-title">Send a birthday wish to your...</h5>
+    </div>
+    <!--End of Header-->
 
+    <!--Button Menu-->
+    <div class="container pb-3" id="btn-menu">
+        <nav class="navbar">
+            <button type="button" class="btn" id="family-btn">Family</button>
+            <button type="button" class="btn" id="friend-btn">Friend</button>
+            <button type="button" class="btn" id="lover-btn">Lover</button>
+            <button type="button" class="btn" id="frenemy-btn">Frenemy</button>
+        </nav>
+    </div>
+    <!--End of Button Menu-->
+
+   <!--Form-->
+   <div class="">
+        <form class="center">
+            <div class="form-group row">
+                <label for="card-title" class="col-sm-2">Card Title:</label>
+                <input type="text" id="card-title" class="form-control col-sm-6" placeholder="Dear Jane,">
+            </div>
+            <div class="form-group row">
+                <label for="card-title" class="col-sm-2">Card Message:</label>
+                <textarea type="text" id="card-message" class="form-control col-sm-6" placeholder="Type your birthday message..."></textarea>
+            </div>
+            <div class="form-group row">
+                <label for="card-title" class="col-sm-2">Card Signature:</label>
+                <input type="text" id="card-sign" class="form-control col-sm-6" placeholder="Yours forever,">
+            </div>
+            <div class="form-group row">
+                <label for="card-title" class="col-sm-2">Sender's Name:</label>
+                <input type="text" id="sender" class="form-control col-sm-6" placeholder="John.">
+            </div>
+        </form>
+    </div>
+    <!--End of form-->
+
+    <!-- Wrapper-->
+    <div class="container-fluid wrapper">
+         
+        <!--Family Card-->
+        <div class="bCard my-5 card" id="family-card">
+            <div class="cardImg">
+                <img src="assets/family.png">
+            </div>
+            <div class="cardBody">
+                <h5 class="cardTitle">Card Title</h5>
+                <p class="cardText">Lorem ipsum dolor sit amet consectetur,
+                     adipisicing elit. Fugiat odit tempore maxime aperiam consequuntur, 
+                     minima quae, soluta ducimus velit facilis praesentium consectetur 
+                     quas vero nam quibusdam, illo explicabo magni eos.</p>
+                <div class="cardSignature">
+                    <p id="greeting">Love,</p>
+                    <p id="senderName">Buchi</p>
+                </div>
+            </div>
+        </div>
+        <!--End of Family Card-->
+
+        <!--Friend Card-->
+        <div class="bCard my-5 card" id="friend-card">
+            <div class="cardImg">
+                <img src="assets/friend.png">
+            </div>
+            <div class="cardBody">
+                <h5 class="cardTitle">Card Title</h5>
+                <p class="cardText">Lorem ipsum dolor sit amet consectetur,
+                     adipisicing elit. Fugiat odit tempore maxime aperiam consequuntur, 
+                     minima quae, soluta ducimus velit facilis praesentium consectetur 
+                     quas vero nam quibusdam, illo explicabo magni eos.</p>
+                <div class="cardSignature">
+                    <p>Love,</p>
+                    <p>Buchi</p>
+                </div>
+            </div>
+        </div>
+        <!--End of Friend Card-->
+
+        <!--Lover Card-->
+        <div class="bCard my-5 card" id="lover-card">
+            <div class="cardImg">
+                <img src="assets/lover.png">
+            </div>
+            <div class="cardBody">
+                <h5 class="cardTitle">Card Title</h5>
+                <p class="cardText">Lorem ipsum dolor sit amet consectetur,
+                     adipisicing elit. Fugiat odit tempore maxime aperiam consequuntur, 
+                     minima quae, soluta ducimus velit facilis praesentium consectetur 
+                     quas vero nam quibusdam, illo explicabo magni eos.</p>
+                <div class="cardSignature">
+                    <p>Love,</p>
+                    <p>Buchi</p>
+                </div>
+            </div>
+        </div>
+        <!--End of Lover Card-->
+
+        <!--Lover Card-->
+        <div class="bCard my-5 card" id="frenemy-card">
+            <div class="cardImg">
+                <img src="assets/frenemy.png">
+            </div>
+            <div class="cardBody">
+                <h5 class="cardTitle">Card Title</h5>
+                <p class="cardText">Lorem ipsum dolor sit amet consectetur,
+                     adipisicing elit. Fugiat odit tempore maxime aperiam consequuntur, 
+                     minima quae, soluta ducimus velit facilis praesentium consectetur 
+                     quas vero nam quibusdam, illo explicabo magni eos.</p>
+                <div class="cardSignature">
+                    <p>Love,</p>
+                    <p>Buchi</p>
+                </div>
+            </div>
+        </div>
+        <!--End of Lover Card-->
+    </div>
+    <!--End of Wrapper-->
+    
+   
+</body>
+</html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Satisfy&display=swap');
+body{
+    //background-color: cornsilk;
+    background-color: ivory;
+}
+#header{
+    font-family: 'Dancing Script';
+    background-color: crimson;
+    color: whitesmoke;
+}
+.center{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    margin: auto;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+.btn{
+    font-size: 20px;
+    font-weight: 400;
+}
+#family-btn{
+    border: 2px solid skyblue !important;
+    color: skyblue;
+    
+    &:hover{
+        background-color: skyblue !important;
+        color: white;
+    }
+}
+#friend-btn{
+    border: 2px solid yellow !important;
+    color: yellow;
+    &:hover{
+        background-color: yellow !important;
+        color: white;
+    }
+}
+#lover-btn{
+    border: 2px solid maroon !important;
+    color: maroon;
+    &:hover{
+        background-color: maroon !important;
+        color: white;
+    }
+}
+#frenemy-btn{
+    border: 2px solid black !important;
+    color: black;
+    &:hover{
+        background-color: black !important;
+        color: white;
+    }
+}
+.bCard{
+    width: 80%;
+    display: flex;
+    box-shadow: 2px 2px 2px 4px rgb(189, 186, 186);
+    .cardImg, .cardBody{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        
+    }
+    .cardImg{
+        //padding-left: 20px;
+        align-items: center;
+        img{
+            width: 300px;
+        }
+    }
+    .cardBody{
+        padding: 20px;
+        font-family: 'Satisfy', cursive;
+        color: whitesmoke;
+        .cardTitle{
+            font-size: 30px;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .cardText{
+            font-size: 22px;
+            padding: 15px;
+            font-weight: 600;
+        }
+        .cardSignature{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 60px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+}
+#family-card{
+        border: 2px solid skyblue;
+        background-color: skyblue;
+        display: none;
+        
+}
+#friend-card{
+        border: 2px solid rgb(247, 247, 122);
+        background-color: rgb(247, 247, 122);
+        display: none;
+    .cardBody{ 
+        color: black;
+    }
+}
+#lover-card{
+    border: 2px solid maroon;
+    background-color: maroon;
+    display: none;
+}
+#frenemy-card{
+    border: 2px solid black;
+    background-color: black;
+    display: none;
+}
+@media screen and (min-width: 1024px){
+    .card{
+        display: flex;
+        flex-direction: row !important;
+    }
+}
