@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 body {
-  background-color: ivory;
+  background-color: white;
 }
 
 #header {
@@ -10,7 +11,7 @@ body {
 }
 
 .center {
-  width: 80%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,6 +20,31 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
+}
+
+.center label, .center input::-webkit-input-placeholder, .center textarea::-webkit-input-placeholder {
+  font-family: 'Kaushan Script', cursive;
+  color: black;
+}
+
+.center label, .center input:-ms-input-placeholder, .center textarea:-ms-input-placeholder {
+  font-family: 'Kaushan Script', cursive;
+  color: black;
+}
+
+.center label, .center input::-ms-input-placeholder, .center textarea::-ms-input-placeholder {
+  font-family: 'Kaushan Script', cursive;
+  color: black;
+}
+
+.center label, .center input::placeholder, .center textarea::placeholder {
+  font-family: 'Kaushan Script', cursive;
+  color: black;
+}
+
+.center label {
+  color: crimson;
+  font-weight: bold;
 }
 
 .wrapper {
@@ -142,7 +168,7 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-right: 60px;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -174,15 +200,10 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
-  .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
-  }
-}
+/*@media screen and (min-width: 768px){
+    .card{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+}*/
 /*# sourceMappingURL=style.css.map */

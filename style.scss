@@ -1,19 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 body{
     //background-color: cornsilk;
-    background-color: ivory;
+    background-color: white;
 }
 #header{
     font-family: 'Dancing Script';
     background-color: crimson;
     color: whitesmoke;
 }
+
 .center{
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    //align-items: center;
     margin: auto;
+
+    label, input::placeholder, textarea::placeholder{
+        font-family: 'Kaushan Script', cursive;
+        color: black;
+    }
+    label{
+        color: crimson;
+        font-weight: bold;
+    }
 }
 .wrapper{
     display: flex;
@@ -95,7 +105,7 @@ body{
             flex-direction: column;
             align-items: flex-end;
             padding-right: 60px;
-            font-size: 22px;
+            font-size: 25px;
             font-weight: 600;
         }
     }
@@ -103,8 +113,7 @@ body{
 #family-card{
         border: 2px solid skyblue;
         background-color: skyblue;
-        display: none;
-        
+        display: none;       
 }
 #friend-card{
         border: 2px solid rgb(247, 247, 122);
@@ -124,9 +133,10 @@ body{
     background-color: black;
     display: none;
 }
-@media screen and (min-width: 1024px){
+
+/*@media screen and (min-width: 768px){
     .card{
-        display: flex;
+        display: flex !important;
         flex-direction: row !important;
     }
-}
+}*/
